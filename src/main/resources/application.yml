@@ -1,0 +1,13 @@
+spring:
+  cloud:
+    stream:
+      default-binder: kafka
+      kafka:
+        binder:
+          brokers: localhost:9092
+      bindings:
+        input:
+          binder: kafka
+          destination: ECOMMERCE_NEW_ORDER
+          content-type: text/plain
+          group: inventory-messaging-group
