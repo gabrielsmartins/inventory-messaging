@@ -8,6 +8,6 @@ spring:
       bindings:
         input:
           binder: kafka
-          destination: ECOMMERCE_NEW_ORDER
-          content-type: text/plain
+          destination: INVENTORY_NEW_ORDER
+          content-type: application/json
           group: inventory-messaging-group
